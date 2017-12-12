@@ -1,0 +1,461 @@
+﻿/*Login*/
+/*Desktop*/
+@media screen and (min-width: 321px)
+{
+    .PageContainer 
+    {
+    height: 99%;
+    }
+
+    .HeaderTitle 
+    {
+        font: 16px Cambria, serif;
+        font-weight: bold;
+        margin: 10px;
+        margin-left: 5px;
+    }
+    
+    .HeaderContent 
+    {
+        font: 12px Cambria, serif;
+        font-style: italic;
+        margin: 5px;
+        width: 520px;
+    }
+    
+    .MainContent
+    {
+        font: 12px Calibri, sans-serif;
+        border-radius: 50px;
+    	border: 3px solid turquoise;
+    	padding: 20px;
+    	background-color: lightcyan;
+    }
+
+    .MainContentHeight 
+    {
+        height: 375px;
+        width: 470px;
+        position: relative;
+    }
+    
+    .LeftHalfContent 
+    {
+        float: left;
+        width: 50%;
+    }
+
+    .LeftInfoContent 
+    {
+        width: 210px;
+    }
+    
+    .RightHalfContent 
+    {
+        float: right;
+        width: 50%;
+    }
+    
+    .Left40Content 
+    {
+        float: left;
+        width: 40%;
+    }
+    
+    .Right60Content 
+    {
+        float: right;
+        width: 60%;
+    }
+    
+    .LoginContent 
+    {
+        width: 100%;
+        height: 140px;
+    }
+
+    #TopMobileLoginDiv, #CAInfoDiv
+    {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+
+    .MainContentFix {
+        width: 470px; 
+        display: none; 
+        position: relative; 
+        left: 520px; 
+        min-height: 375px;
+    }
+
+    .ExtraWidth {
+        width: 120px;
+    }
+    
+    .TextBox 
+    {
+        width: 160px;
+        height: 22px;
+    }
+    
+    .LoginLabel 
+    {
+        width: 30%;
+        display: inline-block;
+        font-weight: bold;
+    }
+    
+    .LoginLabelMoreSpace 
+    {
+        width: 42%
+    }
+    
+    .LoginInfoRow 
+    {
+        margin-top: 5px;
+        margin-bottom: 2.5px;
+    }
+
+    .ErrorText 
+    { 
+        color: red;
+        font-weight: bold;
+    }
+
+    .Hidden 
+    {
+        visibility: hidden;
+    }
+
+    .SuccessText 
+    {
+        color: green;
+        font-weight: bold;
+    }
+    
+    .SubmitButton 
+    {
+        float: right;
+        margin-left: 10px;
+        height: 25px;
+        width: 110px;
+        background-color: darkcyan;
+        border-radius: 12px;
+        color: white;
+        border: 2px solid turquoise;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    }
+    
+    .SubmitButton:hover
+    {
+        background-color: #F5FFFF;
+        color: black;
+    }
+    
+    .CreateAccountContent {
+        width: 100%;
+        border-top: 2px solid turquoise;
+        height: 235px;
+        padding-top: 15px;
+    }
+    
+    .FooterContent 
+    {
+        font: 12px Calibri, sans-serif;
+        margin: 5px;
+        position: fixed; 
+        left: 5px; 
+        bottom: 5px;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 320px)
+{
+    .PageContainer 
+    {
+        height: 99%;
+    }
+
+    .HeaderTitle 
+    {
+        margin: 10px;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .ExtraWidth {
+        width: 120px;
+    }
+
+    .MainContentFix {
+        display: none;
+        position: relative;
+        left: 520px;
+        min-height: 375px;
+    }
+
+    .BigText 
+    {
+        font: 16px Cambria, serif;
+        font-weight: bold;
+    }
+    
+    .HeaderContent {
+        font: 12px Cambria, serif;
+        font-style: italic;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .MainContent
+    {
+        font: 12px Calibri, sans-serif;
+        border-radius: 50px;
+    	border: 3px solid turquoise;
+    	padding: 20px;
+    	background-color: lightcyan;
+    }
+
+    .MainContentHeight 
+    {
+        height: 450px;
+        width: 242px;
+        position: relative;
+    }
+    
+    .LeftHalfContent 
+    {
+        width: 0px;
+        height: 0px;
+        visibility: collapse;
+    }
+    
+    .Left40Content 
+    {
+        visibility: collapse;
+        width: 0px;
+        height: 0px;
+    }
+    
+    .LoginContent 
+    {
+        width: 100%;
+        height: 175px;
+    }
+    
+    .TextBox 
+    {
+        width: 120px;
+        height:25px;
+        float: right;
+    }
+
+    .AdditionalLength {
+        width: 160px;
+    }
+    
+    .LoginLabel 
+    {
+        width: 30%;
+        display: inline-block;
+        font-weight: bold;
+    }
+    
+    .LoginLabelMoreSpace 
+    {
+        width: 50%;
+    }
+    
+    .LoginInfoRow 
+    {
+        margin-top: 5px;
+        margin-bottom: 2.5px;
+    }
+
+    .ErrorText 
+    {
+        margin-left: 10%;
+        color: red;
+        font-weight: bold;
+        float: right;        
+    }
+
+    .Hidden
+    {
+        visibility: hidden;
+    }
+    
+    .SubmitButton 
+    {
+        width: 230px;
+        height: 40px;
+        background-color: darkcyan;
+        border-radius: 12px;
+        color: white;
+        border: 2px solid turquoise;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    }
+    
+    .SubmitButton:hover
+    {
+        background-color: #F5FFFF;
+        color: black;
+    }
+    
+    .CreateAccountContent 
+    {
+        width: 100%;
+        border-top: 2px solid turquoise;
+        padding-top: 20px;
+        height: 250px;
+    }
+    
+    .FooterContent 
+    {
+        font: 12px Calibri, sans-serif;
+        margin: 5px;
+        position: fixed; 
+        left: 5px; 
+        bottom: 5px;
+    }
+}
+
+
+/*Account Info*/
+/*Desktop*/
+@media screen and (min-width: 321px) {
+    .Centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .InnerBorder {
+        border: 1px solid turquoise;
+        border-radius: 15px;
+        padding: 10px;
+        width: 415px;
+    }
+
+    .LeftSideWithRightBorder {
+        border-right: 1px solid darkcyan;
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    .LineHeight {
+        height: 22px;
+    }
+
+    .Bold {
+        font-weight: bold;
+    }
+
+    .SmallPadding {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .RightSideDisplay {
+        padding-left: 10px;
+    }
+
+    #AddElementArea {
+        margin-top: 15px;
+        padding: 10px;
+        width: 415px;
+    }
+
+    #InnerAddElementArea {
+        width: 250px;
+    }
+
+    .InlineBlock {
+        display: inline-block;
+    }
+
+    .FloatRight {
+        float: right;
+    }
+
+    .FloatNone {
+        float: none;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 320px) {
+    .Centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .InnerBorder {
+        border-bottom: 1px solid turquoise;
+    }
+
+    .LeftSideWithRightBorder {
+        border-right: 1px solid darkcyan;
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    .LineHeight {
+    }
+
+    .Bold {
+        font-weight: bold;
+    }
+
+    .SmallPadding {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .RightSideDisplay {
+        padding-left: 10px;
+    }
+
+    #AddElementArea {
+        margin-top: 15px;
+    }
+
+    #InnerAddElementArea {
+        width: 250px;
+    }
+
+    .InlineBlock {
+    }
+
+    .FloatRight {
+        float: right;
+    }
+
+    .FloatNone {
+        float: none;
+    }
+    
+    .BiggerText
+    {
+        font-size: 15px;
+    }
+
+    .MobileFloatNone {
+        float: none;
+    }
+
+    .MobileTextBoxStretch {
+        width: 100%;
+    }
+
+    .MobileButtonAI {
+        margin: 15px 8px;
+    }
+
+    .MobileFloatLeft {
+        float: left;
+    }
+}

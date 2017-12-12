@@ -1,0 +1,121 @@
+﻿@model FinalProject.Models.HomeViewModel
+
+<html>
+
+    <head>
+        <link href="~/Styles/Home.css" rel="stylesheet"/>
+        <title>Final Project</title>
+    </head>
+    
+    <body>
+        <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+        <script src="~/Scripts/jquery-ui.min.js"></script>
+        <script src="~/Scripts/Home.js"></script>
+    
+        <div id="PageContainerDiv" class="PageContainer">
+            <header>
+                <div id="HeaderDiv">
+                    <div id="HeaderTitleDiv" class="HeaderTitle BigText">Welcome to Cuyahoga Community College Student Services Online</div>
+                    <div id="HeaderContentDiv" class="HeaderContent">
+                        Cuyahoga Community College recognizes students' rights to access
+                        personal and academic records in accordance with the Family Educational Rights and Privacy Act of 1974 (FERPA)
+                        as amended by Public Law 93-568.
+                    </div>
+                </div>
+            </header>
+        
+            <div id="LoginMainDiv" class="MainContent MainContentHeight">
+                <div id="LoginDiv" class="LoginContent">
+                    <div id="TopMobileLoginDiv" class="BigText">
+                        Log In
+                    </div>
+                    <div id="LeftLoginDiv" class="LeftHalfContent">
+                        <div id="LoginInfoDiv" class="LeftInfoContent">
+                            Already have an account with us? Returning users may log in by entering their site username and password.
+                        </div>
+                    </div>
+                    <div id="RightLoginDiv" class="RightHalfContent">
+                        <div id="ExistingUsernameDiv" class="LoginInfoRow">
+                            <div class="LoginLabel">Username: </div>
+                            <input type="text" id="ExistingUsername" class="TextBox AdditionalLength"/>
+                        </div>
+                        <div id="ExistingUsernameError" class="ErrorText Hidden">No matching username found.</div>
+                        <div id="ExistingPasswordDiv" class="LoginInfoRow">
+                            <div class="LoginLabel">Password: </div>
+                            <input type="password" id="ExistingPassword" class="TextBox AdditionalLength"/>
+                        </div>
+                        <div id="ExistingPasswordError" class="ErrorText Hidden">Incorrect password.</div>
+                        <button type="button" id="LoginButtonDiv" class="SubmitButton">Log In</button>
+                    </div>
+                </div>
+                <div id="CreateAccountDiv" class="CreateAccountContent">
+                    <div id="CAInfoDiv" class="BigText">
+                        Create New Account
+                    </div>
+                    <div id="LeftCADiv" class="Left40Content">
+                        New users, please create a new account by providing us with some basic information.
+                    </div>
+                    <div id="RightCADiv" class="Right60Content">
+                        <div id="CAUsernameDiv" class="LoginInfoRow">
+                            <div class="LoginLabel LoginLabelMoreSpace">Username: </div>
+                            <input type="text" id="CAUsername" class="TextBox"/>
+                        </div>
+                        <div id="CAUsernameError" class="ErrorText Hidden">Username is already taken.</div>
+                        <div id="CAPasswordDiv" class="LoginInfoRow">
+                            <div class="LoginLabel LoginLabelMoreSpace">Password: </div>
+                            <input type="password" id="CAPassword" class="TextBox"/>
+                        </div>
+                        <div id="CAPasswordError" class="ErrorText Hidden">Password must contain at least 6 characters.</div>
+                        <div id="CAEmailDiv" class="LoginInfoRow">
+                            <div class="LoginLabel LoginLabelMoreSpace">E-Mail Address: </div>
+                            <input type="text" id="CAEmail" class="TextBox"/>
+                        </div>
+                        <div id="CAEmailError" class="ErrorText Hidden">Invalid email format.</div>
+                        <div id="CAEmail2Div" class="LoginInfoRow">
+                            <div class="LoginLabel LoginLabelMoreSpace">Repeat E-Mail Address: </div>
+                            <input type="text" id="CAEmail2" class="TextBox"/>
+                        </div>
+                        <div id="CAEmail2Error" class="ErrorText Hidden">Email addresses must match.</div>
+                        <button type="button" id="CAButtonDiv" class="SubmitButton">Create Account</button>
+                        <div id="CASuccess" class="SuccessText Hidden">Account created successfully.</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="AIMainDiv" class="MainContent MainContentFix">
+                <div id="DisplayInfoArea" class="InnerBorder Centered">
+                    <div>
+                        <div id="AccountName" class="Bold BiggerText InlineBlock LineHeight SmallPadding ExtraWidth">UserName</div>
+                        <div id="AccountNameLabel" class="InlineBlock LineHeight SmallPadding"></div>
+                    </div>
+                    <div id="PlaceHolderDiv"></div>
+                </div>
+                <div id="AddElementArea" class="Centered">
+                    <div id="InnerAddElementArea" class="Centered">
+                        <div id="ElementNameDiv" class="LineHeight SmallPadding">
+                            <div id="ElementNameLabel" class="InlineBlock SmallPadding BiggerText">ElementName</div>
+                            <input type="text" id="ElementNameTextBox" class="TextBox FloatRight MobileFloatNone MobileTextBoxStretch">
+                        </div>
+                        <div id="ElementValueDiv" class="LineHeight SmallPadding">
+                            <div id="ElementValueLabel" class="InlineBlock SmallPadding BiggerText">ElementValue</div>
+                            <input type="text" id="ElementValueTextBox" class="TextBox FloatRight MobileFloatNone MobileTextBoxStretch">
+                        </div>
+                        <div id="ErrorMessageArea" class="ErrorText Hidden"></div>
+                        <div>
+                            <button type="button" id="AddElementButton" class="SubmitButton FloatNone MobileButtonAI" purpose="add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <footer>
+                <div id="FooterDiv" class="FooterContent">
+                    <div id="FooterNameDiv">Cuyahoga Community College</div>
+                    <div id="FooterAddressDiv">700 Carnegie Avenue, Cleveland, Ohio 44115</div>
+                </div>
+            </footer>
+        
+        </div>
+    </body>
+
+</html>
